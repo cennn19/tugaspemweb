@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Desa Melung - Desa Melung</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="tes.css">
+</head>
+<body>
+
+    <header>
+        <!-- TOP BAR (TEAL BACKGROUND) -->
+        <div class="top-bar">
+            <div class="brand-section">
+                <div class="logo-des">
+                    <img src="logo-bms.png" alt="" class="logo-melung-top">
+                </div>
+                <div class="brand-text">
+                    <span class="sub-title">Sistem Informasi Desa</span>
+                    <h1 class="main-title">Melung</h1>
+                </div>
+            </div>
+
+            <div class="date-info">
+                <i class="fa-regular fa-clock"></i>
+                <span>Jumat, 11 Sep 2026 • 19:53:08 WIB</span>
+            </div>
+        </div>
+
+        <!-- MAIN NAVBAR (WHITE BACKGROUND) -->
+        <nav class="nav-container">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i> Menu
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <!-- Home -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+
+                <!-- Profil (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Profil <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sejarah Desa</a></li>
+                        <li><a href="#">Visi & Misi</a></li>
+                        <li><a href="#">Struktur Organisasi</a></li>
+                    </ul>
+                </li>
+
+                <!-- Statistik (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Statistik <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Statistik Penduduk</a></li>
+                        <li><a href="#">Statistik Pekerjaan</a></li>
+                        <li><a href="#">Statistik Pendidikan</a></li>
+                    </ul>
+                </li>
+
+                <!-- Potensi Desa (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Potensi Desa <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Pertanian & Perkebunan</a></li>
+                        <li><a href="#">Kerajinan Lokal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Kelembagaan (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Kelembagaan <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">BPD</a></li>
+                        <li><a href="#">LPMD</a></li>
+                        <li><a href="#">Karang Taruna</a></li>
+                        <li><a href="#">PKK</a></li>
+                    </ul>
+                </li>
+
+                <!-- Transparansi -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Transparansi</a>
+                </li>
+
+                <!-- Produk Hukum (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Produk Hukum <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Peraturan Desa</a></li>
+                        <li><a href="#">Keputusan Kepala Desa</a></li>
+                    </ul>
+                </li>
+
+                <!-- Desa Wisata (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Desa Wisata <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Destinasi Wisata</a></li>
+                        <li><a href="#">Galeri Foto</a></li>
+                    </ul>
+                </li>
+
+                <!-- Bumdes (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Bumdes <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profil BUMDes</a></li>
+                        <li><a href="#">Unit Usaha</a></li>
+                    </ul>
+                </li>
+
+                <!-- Ppid (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Ppid <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profil PPID</a></li>
+                        <li><a href="#">Informasi Berkala</a></li>
+                    </ul>
+                </li>
+
+                <!-- Kabar Desa -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kabar Desa</a>
+                </li>
+
+                <!-- Pelayanan (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Pelayanan <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Layanan Surat Online</a></li>
+                        <li><a href="#">Panduan Persyaratan</a></li>
+                    </ul>
+                </li>
+
+                <!-- Festival Desa -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Festival Desa</a>
+                </li>
+
+                <!-- Kontak Kami -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kontak Kami</a>
+                </li>
+
+                <!-- Desa Anti Korupsi (Dropdown) -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">
+                        Desa Anti Korupsi <i class="fa-solid fa-chevron-down caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Buku Saku Anti Korupsi</a></li>
+                        <li><a href="#">Pengaduan Masyarakat</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER HERO ARTIKEL -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="badge-group">
+                <span class="badge"><i class="fa-solid fa-folder"></i> Profil / Sejarah Desa</span>
+                <span class="badge-info"><i class="fa-regular fa-calendar"></i> 25 Mar 2025</span>
+                <span class="badge-info"><i class="fa-regular fa-eye"></i> 1.213 Dilihat</span>
+            </div>
+            <h1 class="article-title">Sejarah Desa Melung</h1>
+            <p class="article-subtitle">Website Resmi Desa Melung</p>
+            <a href="#" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+        </div>
+    </section>
+
+    <!-- KONTEN & SIDEBAR -->
+    <div class="main-container">
+        <main class="content-area">
+            <article class="card article-content">
+                <h2>Kisah Kyai Melung</h2>
+                <p>Cerita atau legenda rakyat tentang desa Melung adanya Syech R. Abdurrahman (Kyai Melung) sebagai pendiri dan sesepuh desa Melung yang tidak tercatat dalam dokumen sejarah, namun diceritakan secara turun temurun. Diceritakan oleh para orang tua kepada anak-anaknya atau generasi penerusnya tidak lepas dari sejarah kadipaten Pasir Luhur, sebagai tempat persinggahan dan perlintasan R. Kamandaka dan para prajurit Kadipaten Pasir Luhur.</p>
+
+                <h2>Wilayah Administratif</h2>
+                <p>Pada suatu saat para prajurit dalam perlintasannya mendengar adanya ayam R. Kamandaka berkokok dikejauhan yang sangat keras bunyinya (<em>melung-melung</em>) disuatu wilayah maka sumber suara ayam berkokok itu ditandai sebagai daerah “Melung” yang dahulu masuk ke dalam wilayah Kecamatan Kebumen dan baru sekitar tahun 1955 dimasukkan ke dalam wilayah Kecamatan Kedungbanteng.</p>
+
+                <h2>Versi R. Singo Guna</h2>
+                <p>Lalu versi kedua adalah dengan adanya R. Singo Guna yang merupakan keturunan dari R. Honggo Wongso putra dari R. Klapa Aking atau R. Kolopaking. R. Honggo Wangsa menurunkan R. Niti Menggolo kemudian R. Niti Menggolo menurunkan anak bernama R. Kalioso (Syech Abdul Djalal) lalu menurunan anak bernama R. Singo Guna yang hidup di desa Melung.</p>
+                <p>Setelah itu masuk lagi keturunan Kakak R. Singo Guna yaitu R. Suro Handoko dan R. Suro Menggolo. Putra R. Suro Handoko yang bernama R. Sagi (R. Wirya Dikrama) memimpin desa Melung.</p>
+                
+                <h2>Masa Penjajahan Belanda</h2>
+                <p>Pada jaman penjajahan Belanda desa Melung merupakan kebun kopi yang sangat luas dan terkenal di negara Belanda dengan kopi kampungnya, seiring wilayah tersebut yang memiliki potensi sumber daya air yang melimpah maka pada tahun 1928 didirikan PLTA Ketenger yang sesungguhnya berada di Desa Melung.</p>
+
+                <h2>Lurah Pendahulu</h2>
+                <p>Pada masa penjajahan Belanda dan Jepang yang tercatat sejak tahun 1905 sampai dengan tahun 1940 Kepala Desa yang sejak jaman dahulu disebut Lurah dipimpin oleh Suradirana. Setelah masa kemerdekaan maka kepemimpinan digantikan oleh Mulyadirana lalu dilanjutkan dengan Wiryo Sukatmo. Pembangunan yang dihasilkan tidak tercatat karena sumber daya manusia yang ada sangatlah kurang pada masa itu.</p>
+            </article>
+
+            <!-- FORM KOMENTAR -->
+            <section class="card comment-section">
+                <h3><i class="fa-regular fa-comments"></i> Tulis Komentar</h3>
+                <form class="comment-form">
+                    <div class="form-group">
+                        <label>Komentar Anda <span>*</span></label>
+                        <textarea placeholder="Tulis tanggapan atau komentar..." rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Pengirim <span>*</span></label>
+                        <input type="text" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label>No. Telepon / WA <span>*</span></label>
+                        <input type="text" placeholder="Nomor Telepon (Hanya Angka)" required>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="fa-regular fa-paper-plane"></i> Kirim Komentar</button>
+                </form>
+                <div class="empty-comment">
+                    <p><i class="fa-regular fa-comments"></i> Belum ada komentar. Jadilah yang pertama memberikan tanggapan!</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar-area">
+            <div class="widget">
+                <h3 class="widget-title">Berita Terbaru</h3>
+                <div class="news-list">
+                    <a href="#" class="news-item">
+                        <h4>Menggores Kisah di Desa Melung</h4>
+                        <span class="news-date"><i class="fa-regular fa-calendar"></i> 08 Dec 2013</span>
+                    </a>
+                    <a href="#" class="news-item">
+                        <h4>Realisasi Pelaksanaan Anggaran Pendapatan dan Belanja Desa Tahun 2022</h4>
+                        <span class="news-date"><i class="fa-regular fa-calendar"></i> 29 Jan 2026</span>
+                    </a>
+                    <a href="#" class="news-item">
+                        <h4>KETERBELAKANGAN DAN KEMISKINAN</h4>
+                        <span class="news-date"><i class="fa-regular fa-calendar"></i> 11 Jul 2012</span>
+                    </a>
+                    <a href="#" class="news-item">
+                        <h4>Manfaat Portal Atau website Desa</h4>
+                        <span class="news-date"><i class="fa-regular fa-calendar"></i> 14 Jan 2013</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Kategori Artikel</h3>
+                <ul class="category-list">
+                    <li><a href="#"><i class="fa-solid fa-folder"></i> BERITA DESA <span class="count">17</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-folder"></i> KEGIATAN DESA <span class="count">3</span></a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Tag Populer</h3>
+                <div class="tag-cloud">
+                    <a href="#">#Kegiatan 15</a>
+                    <a href="#">#Berita Desa 9</a>
+                    <a href="#">#Pengumuman Desa 4</a>
+                    <a href="#">#Diskusi 2</a>
+                    <a href="#">#Profil Desa 2</a>
+                    <a href="#">#Artikel Umum 1</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+  <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Kolom 1: Tentang Desa -->
+            <div class="footer-col">
+                <div class="brand">
+                    <div class="logo-circle">
+                        <!-- Gunakan tag img di bawah jika logo asli sudah ada -->
+                        <img src="logo-bms.png" alt="Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h2>Desa Melung</h2>
+                        <span class="subtitle">Kabupaten Banyumas</span>
+                    </div>
+                </div>
+                <p class="description">
+                    Website resmi Desa Melung Kabupaten Banyumas.<br>
+                    Menyajikan layanan publik mandiri, transparansi anggaran, serta informasi perkembangan pembangunan wilayah secara akurat dan terbuka.
+                </p>
+            </div>
+
+            <!-- Kolom 2: Statistik -->
+            <div class="footer-col">
+                <div class="section-title">
+                    <h3>Statistik Pengunjung</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="stat-container">
+                    <div class="stat-box">
+                        <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+                        <span class="stat-label">Hari ini</span>
+                        <span class="stat-value">152</span>
+                    </div>
+                    <div class="stat-box">
+                        <div class="icon-box"><i class="fa-regular fa-calendar"></i></div>
+                        <span class="stat-label">Bulan ini</span>
+                        <span class="stat-value">3.398</span>
+                    </div>
+                    <div class="stat-box">
+                        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                        <span class="stat-label">Total Pengunjung</span>
+                        <span class="stat-value text-green">78.299</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom 3: Kontak -->
+            <div class="footer-col">
+                <div class="section-title">
+                    <h3>Kontak Desa</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">ALAMAT KANTOR</span>
+                            <span class="contact-text">Jalan Raya No.50-51, Dusun II, Melung, Kec. Kedungbanteng</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">EMAIL RESMI</span>
+                            <span class="contact-text">melung@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">TELEPON / WA</span>
+                            <span class="contact-text">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Baris Bawah / Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Pemerintah Desa Melung</strong> . Dikembangkan bersama Dinpermasdes & Dinkominfo Kabupaten Banyumas. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

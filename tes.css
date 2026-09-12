@@ -1,0 +1,621 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   1. TOP BAR / HEADER
+   ========================================== */
+.top-bar {
+  background-color: #034d44;
+  color: #ffffff;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-des {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #facc15, #15803d);
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-melung-top {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-des i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #a7f3d0;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.date-info {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+}
+
+/* ==========================================
+   2. NAVIGATION BAR
+   ========================================== */
+.nav-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  padding: 12px 48px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-toggle {
+  display: none;
+  background: #034d44;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2b3e4a;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #034d44;
+}
+
+.nav-link i.fa-house {
+  font-size: 14px;
+}
+
+.nav-link i.caret {
+  font-size: 11px;
+  color: #94a3b8;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover .caret {
+  transform: rotate(180deg);
+  color: #034d44;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 210px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  padding: 8px 0;
+  list-style: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.nav-item.has-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #334155;
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0fdf4;
+  color: #034d44;
+}
+
+/* ==========================================
+   3. HERO BANNER ARTIKEL
+   ========================================== */
+.hero-section {
+  background-color: #034d44;
+  color: #ffffff;
+  padding: 45px 0 65px;
+}
+
+.hero-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.badge-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.badge {
+  background-color: #10b981;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-info {
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.article-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.article-subtitle {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.btn-back {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #034d44;
+  padding: 8px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ==========================================
+   4. LAYOUT UTAMA & KONTEN
+   ========================================== */
+.main-container {
+  max-width: 1140px;
+  margin: -35px auto 40px;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.content-area {
+  flex: 2.8;
+}
+
+.sidebar-area {
+  flex: 1.2;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  border: 1px solid #f1f5f9;
+}
+
+.article-content h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 20px 0 14px;
+}
+
+.article-content h2:first-child {
+  margin-top: 0;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+  color: #475569;
+  text-align: justify;
+}
+
+/* ==========================================
+   5. FORM KOMENTAR
+   ========================================== */
+.comment-section h3 {
+  color: #034d44;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-group label span {
+  color: #ef4444;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #034d44;
+}
+
+.btn-submit {
+  background-color: #034d44;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.empty-comment {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ==========================================
+   6. SIDEBAR WIDGETS
+   ========================================== */
+.widget {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  border: 1px solid #f1f5f9;
+}
+
+.widget-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #034d44;
+  border-bottom: 6px solid #034d44;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.news-item {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.news-item h4 {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.news-date {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list li a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.category-list .count {
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-cloud a {
+  background: #f1f5f9;
+  color: #475569;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Base Footer Styling */
+.site-footer {
+    /* Gradient warna hijau gelap ke teal (menyesuaikan gambar) */
+    background-color: #034d44;
+    color: #ffffff;
+    padding: 60px 40px 20px 40px;
+    font-size: 14px;
+}
+
+/* Layout Container Grid */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+/* === KOLOM 1: BRAND === */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #093c31; /* Warna ikon placeholder */
+    font-size: 24px;
+    overflow: hidden;
+}
+
+/* Jika nanti pakai gambar logo asli */
+.logo-circle img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.brand-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.brand-text .subtitle {
+    font-size: 13px;
+    color: #27ae60; /* Hijau terang */
+    font-weight: 500;
+}
+
+.description {
+    color: #d1e5e0;
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* === JUDUL SEKSI (Kolom 2 & 3) === */
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.section-title .underline {
+    width: 30px;
+    height: 3px;
+    background-color: #27ae60;
+    border-radius: 2px;
+}
+
+/* === KOLOM 2: STATISTIK === */
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Efek Glassmorphism transparan */
+.stat-box {
+    display: flex;
+    width: 350px;
+    height: 70px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 20px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.stat-label {
+    flex-grow: 1;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.text-green {
+    color: #27ae60;
+}
+
+/* === KOLOM 3: KONTAK === */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 11px;
+    color: #27ae60;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* Kotak Ikon Universal (Untuk Statistik & Kontak) */
+.icon-box {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(39, 174, 96, 0.15); /* Hijau transparan */
+    color: #27ae60;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* === BOTTOM BAR / COPYRIGHT === */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #d1e5e0;
+    font-size: 12px;
+}
+
+.footer-bottom strong {
+    color: #ffffff;
+}
