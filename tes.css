@@ -194,59 +194,86 @@ body {
 /* ==========================================
    3. HERO BANNER ARTIKEL
    ========================================== */
+/* ==========================================
+   3. HERO BANNER ARTIKEL (UPDATE)
+   ========================================== */
 .hero-section {
-  background-color: #034d44;
-  color: #ffffff;
-  padding: 45px 0 65px;
+    background-color: #034d44;
+    color: #ffffff;
+    padding: 45px 0 65px;
 }
 
 .hero-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Mengatur tata letak kiri (teks) dan kanan (tombol) */
+.hero-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text-side {
+    flex: 1;
+}
+
+.hero-button-side {
+    flex-shrink: 0;
 }
 
 .badge-group {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .badge {
-  background-color: #10b981;
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-size: 12px;
-  font-weight: 700;
+    background-color: #10b981;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .badge-info {
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
 }
 
 .article-title {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 5px;
 }
 
 .article-subtitle {
-  font-size: 15px;
-  opacity: 0.85;
-  margin-bottom: 25px;
+    font-size: 15px;
+    opacity: 0.85;
 }
 
 .btn-back {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #034d44;
-  padding: 8px 22px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #034d44;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #f1f5f9;
 }
 
 /* ==========================================
